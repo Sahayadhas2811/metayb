@@ -1,0 +1,14 @@
+{
+  "name": "metayb-root",
+  "version": "1.0.0",
+  "description": "B2B Consumer Goods Manufacturer Ordering, Stock Reservation, and Loyalty System",
+  "private": true,
+  "scripts": {
+    "setup:backend": "cd backend && npm install && npm run setup-db",
+    "setup:frontend": "cd frontend && npm install",
+    "setup": "npm run setup:backend && npm run setup:frontend",
+    "start:backend": "cd backend && node server.js",
+    "start:frontend": "cd frontend && npm run dev",
+    "test:backend": "cd backend && npm run test-e2e"
+  }
+}
